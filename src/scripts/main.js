@@ -37,10 +37,19 @@ console.log(wheatSeed)
 
 import { addPlant } from "./field.js"
 
-addPlant(sunflowerSeed);
-addPlant(wheatSeed);
+const testPlantingPlan = [
+    ["Potato", "Soybean", "Soybean", "Corn"],
+    ["Wheat", "Corn", "Wheat", "Asparagus"],
+    ["Asparagus", "Wheat", "Soybean", "Corn"],
+    ["Asparagus", "Soybean", "Potato", "Wheat"]
+]
+
+import { plantSeeds } from "./tractor.js"
+plantSeeds(testPlantingPlan);
 
 import{ usePlants } from "./field.js"
 
 let field = usePlants();
 console.log(field)
+
+
