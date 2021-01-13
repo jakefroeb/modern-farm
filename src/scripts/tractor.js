@@ -17,7 +17,7 @@ export function plantSeeds(plantingPlan) {
                 case "Potato" : addPlant(createPotato()); break
                 case "Soybean" : addPlant(createSoybean()); break
                 case "Sunflower" : addPlant(createSunflower()); break
-                case "Wheat" : addPlant(createWheat); break
+                case "Wheat" : addPlant(createWheat()); break
             }
         
         }

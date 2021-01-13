@@ -52,4 +52,9 @@ import{ usePlants } from "./field.js"
 let field = usePlants();
 console.log(field)
 
+import {harvestPlants} from "./harvester.js"
+let havestedSeeds = harvestPlants(field)
+console.log(havestedSeeds)
+
+
 
