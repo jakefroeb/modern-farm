@@ -1,8 +1,3 @@
-import { createCorn } from "./seeds/corn";
-
-
-const cornArray = createCorn()
-const cornPlant = cornArray[0]
 
 export const harvestPlants = (plants) => {
     let seeds = []

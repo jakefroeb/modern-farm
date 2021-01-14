@@ -1,3 +1,4 @@
+
 export const Catalog = (havestedFood) => {
     let foodHTMLRepresentation = "";
     for(let food of havestedFood){

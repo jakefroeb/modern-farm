@@ -57,6 +57,7 @@ let harvestedSeeds = harvestPlants(field)
 console.log(harvestedSeeds)
 
 import {Catalog} from "./catalog.js"
-Catalog(harvestedSeeds);
+
+Catalog(harvestedSeeds.sort((a, b) => (a.type > b.type) ? 1 : -1));
 
 
