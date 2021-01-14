@@ -1,10 +1,18 @@
+import { createCorn } from "./seeds/corn";
+
+
+const cornArray = createCorn()
+const cornPlant = cornArray[0]
+
 export const harvestPlants = (plants) => {
     let seeds = []
     for(let plant of plants){
-        if (Array.isArray(plant)){
-            plant = plant[0];
-        }else{}
-        let plantOutput = plant.output;
+        let plantOutput
+        if (plant.type === "Corn"){
+            plantOutput = 3;
+        }else{
+            plantOutput = plant.output
+        }
         while(plantOutput > 0){
             seeds.push(plant)
             plantOutput--;

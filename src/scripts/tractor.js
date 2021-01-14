@@ -13,7 +13,9 @@ export function plantSeeds(plantingPlan) {
         for (const seed of row) {
             switch(seed){
                 case "Asparagus" : addPlant(createAsparagus()); break
-                case "Corn" : addPlant(createCorn()); break
+                case "Corn" : const corn = createCorn()
+                                addPlant(corn[0])
+                                addPlant(corn[1]); break
                 case "Potato" : addPlant(createPotato()); break
                 case "Soybean" : addPlant(createSoybean()); break
                 case "Sunflower" : addPlant(createSunflower()); break
