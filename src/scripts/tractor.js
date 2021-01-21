@@ -7,7 +7,6 @@ import {createSoybean} from "./seeds/soybean.js"
 import {createSunflower} from "./seeds/sunflower.js"
 import {createWheat} from "./seeds/wheat.js"
 
-
 export function plantSeeds(plantingPlan) {
     for (const row of plantingPlan) {
         for (const seed of row) {

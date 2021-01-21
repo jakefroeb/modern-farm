@@ -58,6 +58,12 @@ console.log(harvestedSeeds)
 
 import {Catalog} from "./catalog.js"
 
-Catalog(harvestedSeeds.sort((a, b) => (a.type > b.type) ? 1 : -1));
+//sorts the harvested Seeds alphabetically
+//Catalog(harvestedSeeds.sort((a, b) => (a.type > b.type) ? 1 : -1));
 
+
+//sorts seeds into an array with one of each seed type and the total amount of seeds
+import {countSeeds} from "./count.js"
+
+Catalog(countSeeds(harvestedSeeds))
 
